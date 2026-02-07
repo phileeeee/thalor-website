@@ -1,0 +1,70 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-warm: #F5F2EC;
+  --bg-cream: #FAF8F4;
+  --bg-dark: #1A1A1A;
+  --bg-darker: #111111;
+  --text-primary: #1E1E1E;
+  --text-light: #F5F5F0;
+  --text-muted: #7A7A7A;
+  --text-secondary: #555555;
+  --accent: #4A7C6F;
+  --accent-hover: #3D6A5E;
+  --accent-light: #E8F0ED;
+  --accent-text: #FFFFFF;
+  --card-light: #FFFFFF;
+  --card-warm: #F0EDE6;
+  --border-light: #E0DDD5;
+  --border-dark: #333333;
+  --font-satoshi: 'Satoshi', system-ui, -apple-system, sans-serif;
+}
+
+@theme inline {
+  --color-bg-warm: var(--bg-warm);
+  --color-bg-cream: var(--bg-cream);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-darker: var(--bg-darker);
+  --color-text-primary: var(--text-primary);
+  --color-text-light: var(--text-light);
+  --color-text-muted: var(--text-muted);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-light: var(--accent-light);
+  --color-accent-text: var(--accent-text);
+  --color-card-light: var(--card-light);
+  --color-card-warm: var(--card-warm);
+  --color-border-light: var(--border-light);
+  --color-border-dark: var(--border-dark);
+  --font-sans: var(--font-satoshi);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-satoshi);
+  background: var(--bg-warm);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for interactive elements */
+.transition-smooth {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Selection color */
+::selection {
+  background: var(--accent);
+  color: var(--accent-text);
+}
