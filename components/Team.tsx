@@ -71,7 +71,7 @@ export default function Team() {
               {/* Circle photo */}
               <div className="w-28 h-28 mb-5 rounded-full overflow-hidden bg-card-warm">
                 <img
-                  src={member.image}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`}
                   alt={member.name}
                   className="w-full h-full object-cover"
                 />

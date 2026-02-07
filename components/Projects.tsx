@@ -67,7 +67,7 @@ export default function Projects() {
             >
               {/* Project image */}
               <img
-                src={project.image}
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${project.image}`}
                 alt={project.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

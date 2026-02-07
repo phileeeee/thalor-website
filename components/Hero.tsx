@@ -24,7 +24,7 @@ export default function Hero() {
           className="absolute inset-0"
         >
           <img
-            src="/images/hero.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/hero.jpg`}
             alt="Thalor project development"
             className="absolute inset-0 w-full h-full object-cover"
           />

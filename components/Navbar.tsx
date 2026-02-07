@@ -121,7 +121,7 @@ export default function Navbar() {
               style={{ color: textColor }}
               className="flex items-center gap-2 text-xl font-bold uppercase tracking-wider"
             >
-              <img src="/logo/thalor-logo.png" alt="Thalor" className="w-7 h-7 object-contain" />
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-7 h-7 object-contain" />
               Thalor
             </motion.a>
 
@@ -201,7 +201,7 @@ export default function Navbar() {
                 }}
                 className="flex items-center gap-2 text-xl font-bold text-text-primary uppercase tracking-wider"
               >
-                <img src="/logo/thalor-logo.png" alt="Thalor" className="w-7 h-7 object-contain" />
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-7 h-7 object-contain" />
                 Thalor
               </a>
               <button

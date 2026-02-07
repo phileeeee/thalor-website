@@ -72,7 +72,7 @@ export default function About() {
             className="relative aspect-[4/5] bg-card-warm rounded-2xl overflow-hidden"
           >
             <img
-              src="/images/about-team.jpg"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/about-team.jpg`}
               alt="Thalor project"
               className="absolute inset-0 w-full h-full object-cover"
             />

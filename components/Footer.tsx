@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-2 text-text-light font-bold uppercase tracking-wider">
-            <img src="/logo/thalor-logo.png" alt="Thalor" className="w-6 h-6 object-contain brightness-0 invert" />
+            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-6 h-6 object-contain brightness-0 invert" />
             Thalor
           </span>
           <span className="text-text-muted text-sm">
