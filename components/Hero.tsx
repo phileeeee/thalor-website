@@ -17,7 +17,7 @@ export default function Hero() {
     <section ref={ref} className="pt-20 md:pt-24 bg-bg-warm">
       {/* Inset image container — matches nav/content width */}
       <div className="max-w-6xl mx-auto px-6">
-      <div className="relative w-full h-[75vh] md:h-[85vh] rounded-2xl overflow-hidden">
+      <div className="relative w-full aspect-[4/3] md:aspect-auto md:h-[85vh] rounded-2xl overflow-hidden">
         {/* Parallax Image */}
         <motion.div
           style={{ y, scale }}
@@ -38,7 +38,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="text-3xl md:text-5xl lg:text-[3.5vw] text-white whitespace-nowrap"
+              className="text-xl sm:text-3xl md:text-5xl lg:text-[3.5vw] text-white md:whitespace-nowrap"
               style={{ fontFamily: "'DM Serif Display', serif" }}
             >
               We deliver <em>independent</em> project management.

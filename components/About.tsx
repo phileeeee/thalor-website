@@ -47,7 +47,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
                 <p className="text-3xl font-bold text-accent">
-                  <SlotCounter end={100} suffix="%" duration={2} />
+                  <SlotCounter end={100} suffix="%" duration={2} trigger={isInView} />
                 </p>
                 <p className="text-sm text-text-muted mt-1">Independent</p>
               </motion.div>
@@ -57,7 +57,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.45 }}
               >
                 <p className="text-3xl font-bold text-accent">
-                  <SlotCounter end={50} suffix="+" duration={2} />
+                  <SlotCounter end={50} suffix="+" duration={2} trigger={isInView} />
                 </p>
                 <p className="text-sm text-text-muted mt-1">Combined Years of Experience</p>
               </motion.div>

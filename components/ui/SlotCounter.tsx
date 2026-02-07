@@ -9,6 +9,7 @@ interface SlotCounterProps {
   suffix?: string;
   className?: string;
   duration?: number;
+  trigger?: boolean;
 }
 
 export default function SlotCounter({
@@ -17,13 +18,15 @@ export default function SlotCounter({
   suffix = '',
   className = '',
   duration = 1,
+  trigger,
 }: SlotCounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const selfInView = useInView(ref, { once: true, margin: '0px' });
+  const shouldStart = trigger !== undefined ? trigger : selfInView;
   const [displayValue, setDisplayValue] = useState('0');
 
   useEffect(() => {
-    if (isInView) {
+    if (shouldStart) {
       setDisplayValue('0');
       const durationMs = duration * 1000;
       const startTime = Date.now();
@@ -44,7 +47,7 @@ export default function SlotCounter({
 
       return () => clearInterval(countInterval);
     }
-  }, [isInView, end, duration]);
+  }, [shouldStart, end, duration]);
 
   return (
     <span ref={ref} className={className}>
