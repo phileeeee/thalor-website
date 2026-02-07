@@ -6,21 +6,21 @@ import { useRef } from 'react';
 const testimonials = [
   {
     quote:
-      'Thalor brought professionalism and clarity to our project from day one. There were no surprises — just consistent, transparent delivery.',
-    author: 'Client',
-    role: 'Property Developer',
+      'Tomi and the team were incredible, they helped us maximise the rental return on our development with some smart planning advice.',
+    author: 'John & Debbie',
+    role: 'Vaucluse',
   },
   {
     quote:
-      'Their independence gave us confidence that every recommendation was in our best interest. The engineering rigour they bring is second to none.',
-    author: 'Client',
-    role: 'Investor',
+      'The Thalor team managed our project from beginning to end and made it so easy for us. And there were no surprises, which was a nice surprise!',
+    author: 'Craig',
+    role: 'Bondi',
   },
   {
     quote:
-      'From planning through to handover, the Thalor team managed every detail. The result exceeded our expectations.',
-    author: 'Client',
-    role: 'Homeowner',
+      'The level of professionalism was better than I\'ve ever experienced in a renovation process, and I\'m really happy with the results.',
+    author: 'Steven',
+    role: 'Newtown',
   },
 ];
 
