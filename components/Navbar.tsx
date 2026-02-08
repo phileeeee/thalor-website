@@ -119,10 +119,9 @@ export default function Navbar() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               style={{ color: textColor }}
-              className="flex items-center gap-2 text-xl font-bold uppercase tracking-wider"
+              className="flex items-center"
             >
-              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-7 h-7 object-contain" />
-              Thalor
+              <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-full-logo-black.png`} alt="Thalor" className="h-8 object-contain" />
             </motion.a>
 
             {/* Nav Links */}
@@ -199,10 +198,9 @@ export default function Navbar() {
                   e.preventDefault();
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}
-                className="flex items-center gap-2 text-xl font-bold text-text-primary uppercase tracking-wider"
+                className="flex items-center"
               >
-                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-7 h-7 object-contain" />
-                Thalor
+                <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-full-logo-black.png`} alt="Thalor" className="h-8 object-contain" />
               </a>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

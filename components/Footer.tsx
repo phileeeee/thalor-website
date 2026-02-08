@@ -5,10 +5,7 @@ export default function Footer() {
     <footer className="py-8 bg-bg-darker border-t border-border-dark">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-6">
-          <span className="flex items-center gap-2 text-text-light font-bold uppercase tracking-wider">
-            <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-logo.png`} alt="Thalor" className="w-6 h-6 object-contain brightness-0 invert" />
-            Thalor
-          </span>
+          <img src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo/thalor-full-logo-black.png`} alt="Thalor" className="h-6 object-contain brightness-0 invert" />
           <span className="text-text-muted text-sm">
             ACN 690 174 102
           </span>
