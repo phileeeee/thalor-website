@@ -17,7 +17,7 @@ export default function Hero() {
     <section ref={ref} className="pt-20 md:pt-24 bg-bg-warm">
       {/* Inset image container — matches nav/content width */}
       <div className="max-w-6xl mx-auto px-6">
-      <div className="relative w-full aspect-[4/3] md:aspect-auto md:h-[85vh] rounded-2xl overflow-hidden">
+      <div className="relative w-full aspect-[4/3] md:aspect-auto md:h-[85vh] overflow-hidden">
         {/* Parallax Image */}
         <motion.div
           style={{ y, scale }}

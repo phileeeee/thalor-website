@@ -64,7 +64,7 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer"
+              className="group relative aspect-[4/3] overflow-hidden cursor-pointer"
               onClick={() => setActiveCard(activeCard === index ? null : index)}
             >
               {/* Project image */}

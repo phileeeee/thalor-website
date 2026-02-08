@@ -69,7 +69,7 @@ export default function About() {
             initial={{ opacity: 0, x: 40 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative aspect-[4/5] bg-card-warm rounded-2xl overflow-hidden"
+            className="relative aspect-[4/5] bg-card-warm overflow-hidden"
           >
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/about-team.jpg`}
